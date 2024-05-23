@@ -248,3 +248,20 @@ ol li::marker {
     font-size: 18px;
     line-height: 1.6;
 }
+
+footer {
+    background-color: #8B0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+}
