@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #f5f5f5;
+}
+
+nav {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    float: none;
+}
+
+nav li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav li a:hover {
+    background-color: #f20000;
+}
+header {
+    background-color: #8B0000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.titulo-centralizado {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.titulo-centralizado::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.titulo-centralizado:hover::before {
+    background-color: #f20000;
+}
+
+header img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 40px;
+}
+
+h1, h2 {
+    margin-top: 20px;
+}
+
+.intro, .benefits, .faq, .how-to-donate {
+    margin-bottom: 40px;
+}
+
+ol, ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+ol li::marker {
+    font-weight: bold;
+}
+
+.question {
+    background-color: #8B0000;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.question:hover {
+    background-color: #FF0000;
+}
+
+.answer {
+    display: none;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.intro h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #8B0000;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.benefits-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.benefits h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #8B0000;
+    margin-bottom: 20px;
+}
+
+.benefits-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.benefits-content li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.how-to-donate {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.how-to-donate h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #8B0000;
+    margin-bottom: 20px;
+}
+
+.donation-steps {
+    list-style: none;
+    counter-reset: step-counter;
+    padding-left: 0;
+}
+
+.donation-steps li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.step-number {
+    counter-increment: step-counter;
+    background-color: #8B0000;
+    color: white;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.step-content {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+.importance {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.importance h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #8B0000;
+    margin-bottom: 20px;
+}
+
+.importance-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.importance-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
