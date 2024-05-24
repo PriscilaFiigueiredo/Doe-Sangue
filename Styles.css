@@ -221,7 +221,7 @@ ol li::marker {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1;
 }
-.importance {
+.doacao{
     background-color: #fff;
     padding: 40px;
     border-radius: 10px;
@@ -229,25 +229,18 @@ ol li::marker {
     margin-top: 20px;
 }
 
-.importance h2 {
+.doacao h2 {
     text-align: center;
     font-size: 32px;
     color: #8B0000;
     margin-bottom: 20px;
 }
 
-.doacao-content {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
 .doacao {
     margin-bottom: 40px;
 }
 
-.daocao-content {
+.doacao {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -262,11 +255,9 @@ ol li::marker {
     margin-bottom: 20px;
 }
 
-.doacao-content p {
+.doacao p {
     font-size: 18px;
     line-height: 1.6;
-}
-
 }
 
 footer {
