@@ -315,6 +315,21 @@ footer a {
     text-decoration: none;
     transition: color 0.3s ease;
 }
+.fotos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.fotos-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 footer a:hover {
     color: #FFFFFF;
@@ -326,7 +341,7 @@ footer a:hover {
     margin-bottom: 20px;
 }
 
-.slideshow-container {
+.fotos-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
