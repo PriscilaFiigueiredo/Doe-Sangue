@@ -8,7 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #000000;
-    background-color: #f5f5f5;
+    background-color: #eceaea;
 }
 
 nav {
@@ -40,10 +40,10 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #f20000;
+    background-color: #ffee59;
 }
 header {
-    background-color: #8B0000;
+    background-color: #961f1f;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -53,24 +53,18 @@ header {
     font-family: 'Arial Black', Gadget, sans-serif;
     font-size: 36px;
     text-align: center;
-    color: #FFFFFF;
+    color: #f0f00e;
     position: relative;
 }
 
 .titulo-centralizado::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: transparent;
-    z-index: -1;
-    transition: background-color 0.3s ease;
-}
+    
 
-.titulo-centralizado:hover::before {
-    background-color: #f20000;
 }
 
 header img {
@@ -86,7 +80,7 @@ h1, h2 {
     margin-top: 20px;
 }
 
-.intro, .benefits, .faq, .how-to-donate {
+.intro, .benefits,how-to-donate {
     margin-bottom: 40px;
 }
 
@@ -143,6 +137,7 @@ ol li::marker {
 }
 
 .intro-content p {
+    margin: auto;
     font-size: 18px;
     line-height: 1.6;
 }
@@ -224,11 +219,12 @@ ol li::marker {
 
 .fotos {
     margin-bottom: 40px;
+    text-align: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    border-radius: 10px;
 }
 
 .fotos h2 {
@@ -236,4 +232,101 @@ ol li::marker {
     font-size: 32px;
     color: #8B0000;
     margin-bottom: 20px;
+    border-radius: 10px;
+}
+.referencias {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.referencias h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #8B0000;
+    margin-bottom: 20px;
+}
+
+.references-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.references-content li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.references-content li a {
+    color: #0000EE;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.references-content li a:hover {
+    color: #FF0000;
+}
+footer {
+    background-color: #8B0000; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 10px 0; 
+}
+.abordagem-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.abordagem h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #8B0000;
+    margin-bottom: 20px;
+}
+
+.abordagem ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+    padding: 20px;
+   
+}
+
+/* Estiliza o conteúdo de introdução */
+.intro-content {
+    flex: 1;
+    margin: auto;
+    padding: 20px;
+    min-width: 300px; /* Garantir que o texto não fique muito apertado em telas menores */
+}
+
+/* Estiliza o conteúdo de vídeo */
+.video-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    min-width: 300px; /* Garantir que o vídeo não fique muito pequeno em telas menores */
+}
+
+/* Estiliza o vídeo */
+video {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Limitar a largura máxima do vídeo */
+    border: 1px solid #f2ecec;
+    border-radius: 10px;
 }
