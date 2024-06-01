@@ -1,133 +1,239 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #f5f5f5;
 }
 
 nav {
-    background: #333;
-    color: #fff;
-    padding: 15px 0;
-    text-align: center;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 10px 0;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header {
-    background: #e8491d;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-main {
-    padding: 20px;
-}
-
-main section {
-    margin-bottom: 20px;
-}
-
-main section h2 {
-    background: #333;
-    color: #fff;
-    padding: 10px;
-}
-
-main section p, 
-main section ul {
-    background: #fff;
-    padding: 15px;
-    border: 1px solid #ddd;
-}
-
-.main section ul {
-    list-style: none;
-}
-
-.main section ul li {
-    margin-bottom: 10px;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-footer div img {
-    width: 50px;
-    height: auto;
-}
-
-footer a img {
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-}
-
-.step-number {
-    background-color: #333;
-    color: #fff;
-    display: inline-block;
-    padding: 5px 10px;
-    margin-right: 10px;
-    border-radius: 50%;
-}
-
-.donation-steps {
     list-style-type: none;
+    margin: 0;
     padding: 0;
-}
-
-.donation-steps li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-}
-
-.intro-content, .benefits-content, .doacao-content {
-    padding: 10px;
-}
-
-.slideshow-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 20px;
 }
 
-.slideshow-container img {
-    margin: 5px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
+nav li {
+    float: none;
+}
+
+nav li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav li a:hover {
+    background-color: #f20000;
+}
+header {
+    background-color: #8B0000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .titulo-centralizado {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 36px;
     text-align: center;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.titulo-centralizado::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.titulo-centralizado:hover::before {
+    background-color: #f20000;
+}
+
+header img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 40px;
+}
+
+h1, h2 {
+    margin-top: 20px;
+}
+
+.intro, .benefits, .faq, .how-to-donate {
+    margin-bottom: 40px;
+}
+
+ol, ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+ol li::marker {
+    font-weight: bold;
+}
+
+.question {
+    background-color: #8B0000;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.question:hover {
+    background-color: #FF0000;
+}
+
+.answer {
+    display: none;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.intro h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #8B0000;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.benefits-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.por_que_doar h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #8B0000;
+    margin-bottom: 20px;
+}
+
+.benefits-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.benefits-content li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.how-to-donate {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.how-to-donate h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #8B0000;
+    margin-bottom: 20px;
+}
+
+.donation-steps {
+    list-style: none;
+    counter-reset: step-counter;
+    padding-left: 0;
+}
+
+.donation-steps li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.step-number {
+    counter-increment: step-counter;
+    background-color: #8B0000;
+    color: white;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.step-content {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.fotos {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.fotos h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #8B0000;
+    margin-bottom: 20px;
 }
