@@ -1,240 +1,92 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conscientização da Doação de Sangue</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#intro">Apresentação</a></li>
+            <li><a href="#por_que_doar">Por que doar?</a></li>
+            <li><a href="#how-to-donate">Como Doar Sangue</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="titulo-centralizado" style="height: 97px;">DOE SANGUE, SALVE UMA VIDA!</h1>
+    </header>
+    <main>
+        <section id="intro" class="intro">
+            <h2>APRESENTAÇÃO</h2>
+            <div class="intro-content">
+                <p>O projeto solidário de doação de sangue formentado por nós, graduandos do curso de Educação Física da Unifacs, tem o objetivo de incentivar a comunidade acadêmica e a população local a participarem ativamente deste gesto de solidariedade e cidadania. Através de campanhas de conscientização e eventos de coleta de sangue, o projeto busca aumentar o número de doadores e contribuir para a manutenção dos estoques de sangue nos hospitais.
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #000000;
-    background-color: #f5f5f5;
-}
+A doação de sangue enfrenta desafios adicionais devido à maior incidência de doenças virais e ao período de férias. Segundo dados do Ministério da Saúde, durante essa época do ano, os estoques de sangue podem se reduzir em até 30%, enquanto a demanda por transfusões sanguíneas permanece constante. Nesse contexto, é fundamental ressaltar a importância vital da doação de sangue durante o inverno e incentivar a participação ativa da comunidade.
 
-nav {
-    background-color: #ffffff;
-    overflow: hidden;
-    padding: 10px 0;
-}
+Ela é essencial durante todo o ano, mas é no inverno que seu papel se torna ainda mais crucial. Durante essa estação, os estoques de sangue tendem a diminuir, enquanto a demanda por transfusões sanguíneas continua alta. É nesse momento que precisamos unir forças e garantir que os hospitais tenham um suprimento adequado de sangue para atender emergências, cirurgias e tratamentos.
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
+Inúmeros estudos têm sido realizados com o objetivo de elencar fatores psicossociais que sejam determinantes no recrutamento e na fidelização de doadores voluntários.
 
-nav li {
-    float: none;
-}
+Uma pesquisa conduzida por uma brasileira em 2018, em Ribeirão Preto (SP) e publicada na revista eletrônica Vox Sanguinis, avaliou como religiosidade, medo, qualidade de vida, grupos de referência e variáveis sociodemográficas e comportamentais podem interferir na decisão dos indivíduos na hora de doar sangue.
 
-nav li a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
+A variável que mais parece interferir é o medo: de sangue, injeções ou desmaios, o que afeta diretamente a doação. Devido a isso, foi sugerida a realização de estudos para estabelecer uma melhor compreensão da relação entre o medo e o bloqueio para a doação. O objetivo é orientar campanhas, através da conscientização, para evitar o baixo interesse da população causado por preconceitos culturais ou falta de informações sobre o assunto.</p>
+            </div>
+        </section>
+        <section id="por_que_doar" class="por_que_doar">
+            <h2>POR QUE DOAR? </h2>
+            <div class="benefits-content">
+                <ul>
+                    <li>A doação de sangue é um ato essencial de generosidade que pode salvar vidas. Quando você doa sangue, está ajudando a garantir que os hospitais tenham estoques suficientes para tratar emergências, realizar cirurgias, e cuidar de pacientes com doenças graves que necessitam de transfusões regulares. 
 
-nav li a:hover {
-    background-color: #f20000;
-}
-header {
-    background-color: #8B0000;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.titulo-centralizado {
-    font-family: 'Arial Black', Gadget, sans-serif;
-    font-size: 36px;
-    text-align: center;
-    color: #FFFFFF;
-    position: relative;
-}
-
-.titulo-centralizado::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: transparent;
-    z-index: -1;
-    transition: background-color 0.3s ease;
-}
-
-.titulo-centralizado:hover::before {
-    background-color: #f20000;
-}
-
-header img {
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-main {
-    padding: 40px;
-}
-
-h1, h2 {
-    margin-top: 20px;
-}
-
-.intro, .benefits, .faq, .how-to-donate {
-    margin-bottom: 40px;
-}
-
-ol, ul {
-    padding-left: 20px;
-    margin-top: 10px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-ol li::marker {
-    font-weight: bold;
-}
-
-.question {
-    background-color: #8B0000;
-    color: white;
-    padding: 15px;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 10px;
-}
-
-.question:hover {
-    background-color: #FF0000;
-}
-
-.answer {
-    display: none;
-    padding: 15px;
-    background-color: #ffffff;
-    color: #000000;
-    margin-top: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.intro-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.intro h2 {
-    text-align: center;
-    font-size: 32px;
-    color: #8B0000;
-    margin-bottom: 20px;
-}
-
-.intro-content p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.benefits-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.por_que_doar h2 {
-    text-align: center;
-    font-size: 32px;
-    color: #8B0000;
-    margin-bottom: 20px;
-}
-
-.benefits-content ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.benefits-content li {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-.how-to-donate {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.how-to-donate h2 {
-    text-align: center;
-    font-size: 32px;
-    color: #8B0000;
-    margin-bottom: 20px;
-}
-
-.donation-steps {
-    list-style: none;
-    counter-reset: step-counter;
-    padding-left: 0;
-}
-
-.donation-steps li {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.step-number {
-    counter-increment: step-counter;
-    background-color: #8B0000;
-    color: white;
-    font-weight: bold;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-}
-
-.step-content {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1;
-}
-
-.fotos {
-    margin-bottom: 40px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.fotos h2 {
-    text-align: center;
-    font-size: 32px;
-    color: #8B0000;
-    margin-bottom: 20px;
+Cada doação pode beneficiar até quatro pessoas diferentes, pois o sangue é separado em componentes distintos (como plaquetas, plasma e hemácias) que atendem a diferentes necessidades médicas. Além de ser uma atitude altruísta, doar sangue contribui significativamente para a saúde pública, aumentando a eficiência dos serviços médicos e melhorando a qualidade de vida dos pacientes.
+.</li>
+                </ul>
+            </div>
     
-}
+        </section>
+        <section id="how-to-donate" class="how-to-donate">
+            <h2>COMO DOAR SANGUE</h2>
+            <ol class="donation-steps">
+                <li>
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <strong>Verifique os requisitos:</strong> Certifique-se de que você atende aos critérios básicos para doação de sangue, como idade, peso e estado de saúde.
+                    </div>
+                </li>
+                <li>
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <strong>Encontre um banco de sangue:</strong> Localize um banco de sangue próximo a você. Muitas instituições têm sites ou linhas telefônicas onde você pode agendar sua doação.
+                    </div>
+                </li>
+                <li>
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <strong>Prepare-se para a doação:</strong> Na véspera da doação, durma bem, hidrate-se e faça uma refeição leve antes de doar. Evite alimentos gordurosos e bebidas alcoólicas.
+                    </div>
+                </li>
+                <li>
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <strong>No dia da doação:</strong> Leve um documento de identificação com foto. No banco de sangue, você passará por uma triagem rápida para verificar sua saúde e responder a algumas perguntas sobre seu histórico médico.
+                    </div>
+                </li>
+                <li>
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <strong>Após a doação:</strong> Descanse por alguns minutos, beba líquidos e faça um lanche leve oferecido pelo banco de sangue. Evite atividades físicas intensas nas próximas 24 horas.
+                    </div>
+                </li>
+            </ol>
+            <section id="fotos" class="fotos">
+                      <img src="IMG_7265.JPG" style="width:20%">
+                        <img src="IMG_7266.JPG" style="width:20%">
+                        
+                        <img src="IMG_7299.JPG" style="width:20%">
+                        <img src="IMG_7269.JPG" style="width: 20%">
+                    </div>
+    </main>
+</body>
+</html>
